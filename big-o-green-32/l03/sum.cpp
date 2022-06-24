@@ -12,10 +12,5 @@ int main() {
         sum = sum + i;
     }
     cout << sum;
-
-// print every digit of a integer
-    for (; n > 0; n = n / 10) {
-        cout << n % 10;
-    }
     return 0;
 }
