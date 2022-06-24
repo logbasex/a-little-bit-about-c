@@ -6,9 +6,10 @@ set(CMAKE_CXX_STANDARD 14)
 
 include_directories(big-o-green-32)
 
-set(SOURCES big-o-green-32/l01_hello_world.cpp)
+set(SOURCES big-o-green-32/l01_hello_world.cpp big-o-green-32/l01_sum_two_integers.cpp big-o-green-32/l03/sum.cpp)
 
-file(GLOB SOURCES "big-o-green-32/*.cpp")
+# https://technoteshelp.com/how-to-use-cmake-file-glob-srcs-with-a-build-directory/
+file(GLOB SOURCES "big-o-green-32/*.cpp" "big-o-green-32/*/*.cpp")
 
 add_executable(big-o-green-32 ${SOURCES})
 
